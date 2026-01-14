@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
+
 
 export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -29,7 +29,7 @@ export function Navbar() {
                     {/* Adding temporary links for navigation */}
                     <Link href="#program" className="text-sm text-gray-300 hover:text-white transition-colors">EL PROGRAMA</Link>
                     <Link href="#pricing" className="text-sm text-gray-300 hover:text-white transition-colors">PLANES</Link>
-                    <Button size="sm" variant="outline">Unirse</Button>
+
                 </div>
             </div>
         </nav>
