@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
+
 import { Reveal } from "@/components/ui/Reveal";
 import { motion } from "framer-motion";
 
@@ -29,19 +29,14 @@ export function Hero() {
                 </Reveal>
 
                 <Reveal delay={0.4}>
-                    <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-                        UNETE A NUESTRA COMUNIDAD Y ENTERATE DE NUESTROS ACTIVIDADES CON EL EQUIPO, NOVEDADES Y NUESTRAS REDES SOCIALES.
-                    </p>
-                </Reveal>
-
-                <Reveal delay={0.6}>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Button size="lg" className="w-full sm:w-auto">
-                            Ver Planes
-                        </Button>
-                        <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                            Contáctanos
-                        </Button>
+                    <div className="mt-0">
+                        <Image
+                            src="/logo.png"
+                            alt="Morphid Logo"
+                            width={240}
+                            height={240}
+                            priority
+                        />
                     </div>
                 </Reveal>
             </div>
